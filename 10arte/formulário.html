@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form name="Cadastro" onsubmit="alert('Formulário enviado.')" target="_blank" method="get">
+            <br>
+            <label>Texto: </label><input type="text"/><br>
+            <label>Número: </label><input type="number" min="0" step="5" max="99"/><br>
+            <label>Valor: </label><input type="range" min="0" max="10" value="5"/><br>
+            <label>Cor: </label><input type="color"/><br>
+            <label>Email: </label><input type="email"/><br> 
+            <label>URL: </label><input type="url"/><br>
+            <label>Data: </label><input type="date"/><br>
+            <label>Semana: </label><input type="week"/><br>
+            <label>Mês: </label><input type="month"/><br>
+            <label>Checkbox: </label><input type="checkbox"/><input type="checkbox"/><br>
+            <label>Radio: </label><input type="radio" name="Sim"/><input type="radio" name="Sim"/><br>
+            <button type="button" ondblclick="alert('Clicô!')">Clique em Mim!</button><br>
+            <button type="button" onmouseover="alert('Pasô!')">Passe por Mim!</button><br>
+            <label>Cargo: </label>
+            <select name="role">
+                <option value="">Selecione o cargo</option>
+                <option selected value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option value="presidente">Presidente</option>
+            </select><br>
+            <label>Assunto: </label><input type="text" name="subject"><br>
+            <textarea rows="10" cols="100" name="message"></textarea><br>
+            <label>Pesquisar: </label><input type="search"/><br>
+            <label>Botão: </label><input type="submit" value="Enviar"><br>
+        </form>
+    </body>
+</html>
